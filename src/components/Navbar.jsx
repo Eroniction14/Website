@@ -49,7 +49,7 @@ const Navbar = () => {
             >
               {nav.id === "resume" ? (
                 <a 
-                  href="/Resume.pdf"  // Direct link to PDF
+                  href={`${import.meta.env.BASE_URL}Resume.pdf`}  // ✅ Corrected Resume link
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +88,7 @@ const Navbar = () => {
                 >
                   {nav.id === "resume" ? (
                     <a
-                      href="/Resume.pdf"
+                      href={`${import.meta.env.BASE_URL}Resume.pdf`} // ✅ Fixed Resume link in mobile menu
                       target="_blank"
                       rel="noopener noreferrer"
                     >
